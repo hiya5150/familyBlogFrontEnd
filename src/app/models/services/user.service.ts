@@ -6,7 +6,7 @@ import {Observable} from 'rxjs';
   providedIn: 'root'
 })
 export class UserService {
-  private baseUrl = 'http:localhost/familyBlogBackEnd/';
+  private baseUrl = 'http://localhost/familyBlogBackEnd/';
   constructor(private http: HttpClient) {}
 
   public login(): Observable<boolean> {
@@ -14,3 +14,5 @@ export class UserService {
   }
 
 }
+
+// TODO not boolean token type. should be token type (how to set it up>
