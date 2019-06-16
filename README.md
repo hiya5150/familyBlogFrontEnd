@@ -1,27 +1,23 @@
-# FamilyBlogFrontEnd
+Family Blog
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
+REVISED MVP
 
-## Development server
+authentication.
+creation of blog entries that support text.
+creation of blog entries that support images and video.
+adding edit and delete buttons.
+look into how to use SQLite - no secondary serveris required
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+for hosting: heroku supports both frontend and backend. githubpages for frontend
 
-## Code scaffolding
+I will use Angular for frontend and MySQL as the database to store the data.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Below, I map out each page of the project.
 
-## Build
+Login page Navbar – new blog post, users, search blog posts (by date or keyword), view old issues of Eigner Musings. Homepage – list of blog posts. when clicking on individual (blog) post in homepage, user will be redirected to post page Post – this will display the image, or video, or article. There will be an edit button, and a delete button. Only the user who submitted the post can edit or delete his/her post. User – this page allows the addition of new users. new post – this page allows user to add new post. There will be a text box for text entry. There will also be a button to add an image, and a button to add a video. Also a text box for an image caption and a video caption. Old issues – this will display an image of the cover of old Eigner Musings issues. By clicking on it, user can view the pdf file.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Components Login Component Homepage (Posts) Component Post Component New Post Component Navbar Component User Component OldIssues Component Blog service Auth guard so only admin can edit user information
 
-## Running unit tests
+MVC structure Model – auth guard View – login, homepage, post, new post, navbar, user, oldIssues Controller - blog service, classes: post, users, oldIssues
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Database Users table – user_id, email/username, password. Posts table – post_id, post_title, post_body, author, created OldIssues table – issue_id, issue number, issue_image, issue_body
