@@ -20,5 +20,3 @@ export class LoginComponent implements OnInit {
 
 }
 
-// TODO create app routing module manually (I forgot to choose that option)
-// TODO install moduel for matdialogref
