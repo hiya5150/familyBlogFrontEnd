@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {Observable} from 'rxjs';
+import {Post} from '../Post';
 
 @Injectable({
   providedIn: 'root'
@@ -24,7 +25,7 @@ export class UserService {
     return this.http.post(`${this.baseUrl}register/${type}Register`, body, this.httpOptions);
   }
 
-  loadPosts(): Observable<Post[]> {
+  getPosts(): Observable<Post[]> {
     return this.http.get<Post[]>(`${this.baseUrl}Home/loadPosts`, this.httpOptions);
   }
 

@@ -28,12 +28,12 @@ export class RegisterComponent implements OnInit {
   onSubmit() {
     this.userService.register(this.name, this.username, this.password, this.type)
       .subscribe((res) => {
-        if(res.success === true) {
+        if (res.success === true) {
           this.dialogRef.close();
           // this.openLogin();
         }
-      })
-    
+      });
+
   }
 
 }
