@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule} from './app-routing.module';
 import { AppComponent } from './app.component';
 import {MatDialogModule, MatToolbarModule} from '@angular/material';
+import {HttpClientModule} from '@angular/common/http';
 
 
 import { MainComponent } from './views/main/main.component';
@@ -24,7 +25,10 @@ import { HomepageComponent } from './views/homepage/homepage.component';
     BrowserModule,
     AppRoutingModule,
     MatToolbarModule,
-    MatDialogModule
+    MatDialogModule,
+    HttpClientModule
+    
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
