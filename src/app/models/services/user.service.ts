@@ -7,7 +7,7 @@ import {Post} from '../Post';
   providedIn: 'root'
 })
 export class UserService {
-  private baseUrl = 'https://familyblog.herokuapp.com/';
+  private baseUrl = 'http://localhost/familyblogbackend/';
   private httpOptions = {
     headers: new HttpHeaders()
       .set('Content-Type', 'application/x-www-form-urlencoded')
