@@ -24,7 +24,7 @@ export class UserService {
     const body = `name=${name}&username=${username}&password=${password}`;
     return this.http.post(`${this.baseUrl}register/${type}Register`, body, this.httpOptions);
   }
-
+  1
   getPosts(): Observable<Post[]> {
     return this.http.get<Post[]>(`${this.baseUrl}Home/loadPosts`, this.httpOptions);
   }

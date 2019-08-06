@@ -3,6 +3,7 @@ import {Post} from '../../models/Post';
 import {MatDialog, MatDialogConfig} from '@angular/material';
 import {UserService} from '../../models/services/user.service';
 import {RegisterComponent} from '../register/register.component';
+import {LoginComponent} from '../login/login.component';
 
 @Component({
   selector: 'app-homepage',
@@ -28,6 +29,15 @@ export class HomepageComponent implements OnInit {
     dialogConfig.width = '600px';
 
     this.dialog.open(RegisterComponent, dialogConfig);
+  }
+
+  openLogin(): void {
+    const dialogConfig = new MatDialogConfig();
+    dialogConfig.disableClose = true;
+    dialogConfig.autoFocus = true;
+    dialogConfig.width = '600px';
+
+    this.dialog.open(LoginComponent, dialogConfig);
   }
 
   getPosts(): void {

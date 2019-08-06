@@ -2,7 +2,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule} from './app-routing.module';
 import { AppComponent } from './app.component';
-import {MatDialogModule, MatToolbarModule} from '@angular/material';
+import {
+  MatButtonModule,
+  MatDialogModule,
+  MatFormFieldModule, MatInputModule,
+  MatRadioModule,
+  MatToolbarModule
+} from '@angular/material';
 import {HttpClientModule} from '@angular/common/http';
 
 
@@ -11,6 +17,8 @@ import { LoginComponent } from './views/login/login.component';
 import { RegisterComponent } from './views/register/register.component';
 import { NotFoundComponent } from './views/not-found/not-found.component';
 import { HomepageComponent } from './views/homepage/homepage.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -26,9 +34,15 @@ import { HomepageComponent } from './views/homepage/homepage.component';
     AppRoutingModule,
     MatToolbarModule,
     MatDialogModule,
-    HttpClientModule
-    
-    
+    HttpClientModule,
+    MatButtonModule,
+    BrowserAnimationsModule,
+    FormsModule,
+    MatRadioModule,
+    MatFormFieldModule,
+    MatInputModule
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]
