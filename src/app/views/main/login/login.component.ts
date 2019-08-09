@@ -31,10 +31,15 @@ export class LoginComponent implements OnInit {
       if (res.token) {
         window.localStorage.setItem('token', res.token);
         this.dialogRef.close();
-        this.router.navigateByUrl(`$(this.type)s/home`).then();
+        this.router.navigateByUrl(`$(this.type)/home`).then();
       }
      });
   }
 
 }
+
+// TODO: ERROR MESSAGE WHEN USER FORGETS TO CHOOSE TYPE
+// TODO: snack bar when logged in
+
+
 
