@@ -13,12 +13,17 @@ import {HttpClientModule} from '@angular/common/http';
 
 
 import { MainComponent } from './views/main/main.component';
-import { LoginComponent } from './views/login/login.component';
-import { RegisterComponent } from './views/register/register.component';
-import { NotFoundComponent } from './views/not-found/not-found.component';
-import { HomepageComponent } from './views/homepage/homepage.component';
+import { LoginComponent } from './views/main/login/login.component';
+import { RegisterComponent } from './views/main/register/register.component';
+import { NotFoundComponent } from './views/main/not-found/not-found.component';
+import { HomepageComponent } from './views/main/homepage/homepage.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {FormsModule} from "@angular/forms";
+import {FormsModule} from '@angular/forms';
+import { PostsComponent } from './views/visitors/posts/posts.component';
+import { VisitorsHomepageComponent } from './views/visitors/visitors-homepage/visitors-homepage.component';
+import { VisitorsNavComponent } from './views/visitors/visitors-nav/visitors-nav.component';
+import { BloggersHomepageComponent } from './views/bloggers/bloggers-homepage/bloggers-homepage.component';
+import { BloggersNavComponent } from './views/bloggers/bloggers-nav/bloggers-nav.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +32,12 @@ import {FormsModule} from "@angular/forms";
     LoginComponent,
     RegisterComponent,
     NotFoundComponent,
-    HomepageComponent
+    HomepageComponent,
+    PostsComponent,
+    VisitorsHomepageComponent,
+    VisitorsNavComponent,
+    BloggersHomepageComponent,
+    BloggersNavComponent
   ],
   imports: [
     BrowserModule,
