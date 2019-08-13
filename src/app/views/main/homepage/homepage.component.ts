@@ -12,7 +12,8 @@ import {LoginComponent} from '../login/login.component';
 })
 export class HomepageComponent implements OnInit {
   posts: Post[];
-  displayedColumnsPost: string[] = ['postId', 'postTitle', 'postBody', 'postAuthor', 'createdOn']
+
+  displayedColumnsPost: string[] = ['postId', 'postTitle', 'postBody', 'createdOn', 'bloggerName'];
 
 
   constructor(private dialog: MatDialog, private userService: UserService) { }

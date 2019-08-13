@@ -6,7 +6,7 @@ import {
   MatButtonModule,
   MatDialogModule,
   MatFormFieldModule, MatInputModule,
-  MatRadioModule,
+  MatRadioModule, MatTableModule,
   MatToolbarModule
 } from '@angular/material';
 import {HttpClientModule} from '@angular/common/http';
@@ -19,11 +19,12 @@ import { NotFoundComponent } from './views/main/not-found/not-found.component';
 import { HomepageComponent } from './views/main/homepage/homepage.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {FormsModule} from '@angular/forms';
-import { PostsComponent } from './views/visitors/posts/posts.component';
+import { VisitorsPostsComponent } from './views/visitors/posts/visitors-posts. component';
 import { VisitorsHomepageComponent } from './views/visitors/visitors-homepage/visitors-homepage.component';
 import { VisitorsNavComponent } from './views/visitors/visitors-nav/visitors-nav.component';
 import { BloggersHomepageComponent } from './views/bloggers/bloggers-homepage/bloggers-homepage.component';
 import { BloggersNavComponent } from './views/bloggers/bloggers-nav/bloggers-nav.component';
+import {BloggersPostsComponent} from './views/bloggers/posts/bloggers-posts.component';
 
 @NgModule({
   declarations: [
@@ -33,11 +34,12 @@ import { BloggersNavComponent } from './views/bloggers/bloggers-nav/bloggers-nav
     RegisterComponent,
     NotFoundComponent,
     HomepageComponent,
-    PostsComponent,
+    VisitorsPostsComponent,
     VisitorsHomepageComponent,
     VisitorsNavComponent,
     BloggersHomepageComponent,
-    BloggersNavComponent
+    BloggersNavComponent,
+    BloggersPostsComponent
   ],
   imports: [
     BrowserModule,
@@ -50,7 +52,8 @@ import { BloggersNavComponent } from './views/bloggers/bloggers-nav/bloggers-nav
     FormsModule,
     MatRadioModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatTableModule
 
 
   ],

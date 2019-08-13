@@ -1,11 +1,7 @@
 <form (ngSubmit)="onSubmit()">
   <mat-dialog-content>
     <h2  mat-dialog-title>Register</h2>
-    <label id="pick-user-type-label">Please choose your user type: </label>
-    <mat-radio-group aria-label="pick-user-type-label" [(ngModel)]="type" name="type" required>
-      <mat-radio-button value="blogger">Blogger</mat-radio-button>
-      <mat-radio-button value="visitor">Visitor</mat-radio-button>
-    </mat-radio-group>
+
     <p>
       <mat-form-field appearance="outline">
         <mat-label>Full Name</mat-label>
@@ -24,6 +20,11 @@
       <input type="password" matInput [(ngModel)]="password" name="password" required>
     </mat-form-field>
   </p>
+    <label id="pick-user-type-label">Please choose your user type: </label>
+    <mat-radio-group aria-label="pick-user-type-label" [(ngModel)]="type" name="type" required>
+      <mat-radio-button value="blogger">Blogger</mat-radio-button>
+      <mat-radio-button value="visitor">Visitor</mat-radio-button>
+    </mat-radio-group>
   </mat-dialog-content>
   <mat-dialog-actions>
     <button mat-raised-button [mat-dialog-close]="true">Cancel</button>

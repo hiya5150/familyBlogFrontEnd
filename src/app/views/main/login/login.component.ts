@@ -31,7 +31,7 @@ export class LoginComponent implements OnInit {
       if (res.token) {
         window.localStorage.setItem('token', res.token);
         this.dialogRef.close();
-        this.router.navigateByUrl(`$(this.type)/home`).then();
+        this.router.navigateByUrl(`$(this.type)s/home`).then();
       }
      });
   }
