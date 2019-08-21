@@ -58,3 +58,8 @@ export class HomepageComponent implements OnInit {
   }
 
 }
+
+// TODO login and register work fine, so does loadPosts.
+// TODO It's all a CORS problem. temporary solution is to run this:
+// TODO chrome.exe --user-data-dir="C:/Chrome dev session" --disable-web-security
+
