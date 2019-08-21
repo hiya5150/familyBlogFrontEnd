@@ -52,4 +52,4 @@ export class BloggersPostsComponent implements OnInit {
 
 }
 
-// TODO: need to do visitorService and both auths, then test if they work.
+

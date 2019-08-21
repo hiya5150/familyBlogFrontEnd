@@ -21,7 +21,7 @@ export class AuthService {
     return !!localStorage.getItem('token');
   }
   // checks if token available and return true if token valid as teacher
-  verifyTeacher(): Observable<any> {
+  verifyBlogger(): Observable<any> {
     if (AuthService.isLoggedIn()) {
       return this.http.get<any>(`${this.baseUrl}BloggerToken`, this.httpOptions);
     } else {
@@ -29,7 +29,7 @@ export class AuthService {
     }
   }
   // checks if token available and return true if token valid as student
-  verifyStudent(): Observable<any> {
+  verifyVisitor(): Observable<any> {
     if (AuthService.isLoggedIn()) {
       return this.http.get<any>(`${this.baseUrl}verifyVisitorToken`, this.httpOptions);
     } else {
