@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import {CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, UrlTree, Router} from '@angular/router';
 import { of, Observable } from 'rxjs';
 import {AuthService} from './auth.service';
-import {switchMap} from "rxjs/operators";
+import {switchMap} from 'rxjs/operators';
 
 
 @Injectable({
