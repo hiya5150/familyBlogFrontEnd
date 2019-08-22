@@ -13,7 +13,7 @@ import {LoginComponent} from '../login/login.component';
 export class HomepageComponent implements OnInit {
   posts: Post[];
 
-  displayedColumnsPost: string[] = ['postId', 'postTitle', 'postBody', 'createdOn', 'bloggerName'];
+  displayedColumnsPost: string[] = ['postTitle', 'postBody', 'createdOn', 'bloggerName'];
 
 
   constructor(private dialog: MatDialog, private userService: UserService) { }
@@ -62,7 +62,8 @@ export class HomepageComponent implements OnInit {
 // TODO login and register work fine, so does loadPosts.
 // TODO It's all a CORS problem. temporary solution is to run this:
 // TODO chrome.exe --user-data-dir="C:/Chrome dev session" --disable-web-security
-// TODO finish homepage - loadposts, there is an error with post id
-// TODO next step is to make sure lgoin and register route to correct homepages
+// TODO finish formatting table.
+//  TODO no spaces between columns. date should be different format. author's name isn't appearing
+// TODO next step is to fix error with routing of login and register (url). there is an error.
 
 

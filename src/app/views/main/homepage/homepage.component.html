@@ -13,6 +13,18 @@
     <th mat-header-cell *matHeaderCellDef>Title</th>
     <td mat-cell *matCellDef="let post"> {{post.postTitle}}</td>
   </ng-container>
+    <ng-container matColumnDef="postBody">
+      <th mat-header-cell *matHeaderCellDef>Story</th>
+      <td mat-cell *matCellDef="let post"> {{post.postBody}}</td>
+    </ng-container>
+    <ng-container matColumnDef="createdOn">
+      <th mat-header-cell *matHeaderCellDef>Date Created</th>
+      <td mat-cell *matCellDef="let post"> {{post.createdOn}}</td>
+    </ng-container>
+    <ng-container matColumnDef="bloggerName">
+      <th mat-header-cell *matHeaderCellDef>Author</th>
+      <td mat-cell *matCellDef="let post"> {{post.bloggerName}}</td>
+    </ng-container>
     <tr mat-header-row *matHeaderRowDef="displayedColumnsPost"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumnsPost;"></tr>
   </table>
