@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule} from './app-routing.module';
 import { AppComponent } from './app.component';
 import {
-  MatButtonModule,
+  MatButtonModule, MatCardModule,
   MatDialogModule,
   MatFormFieldModule, MatInputModule,
   MatRadioModule, MatTableModule,
@@ -53,7 +53,8 @@ import {BloggersPostsComponent} from './views/bloggers/posts/bloggers-posts.comp
     MatRadioModule,
     MatFormFieldModule,
     MatInputModule,
-    MatTableModule
+    MatTableModule,
+    MatCardModule,
 
 
   ],

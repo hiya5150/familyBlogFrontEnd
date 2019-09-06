@@ -62,8 +62,13 @@ export class HomepageComponent implements OnInit {
 // TODO login and register work fine, so does loadPosts.
 // TODO It's all a CORS problem. temporary solution is to run this:
 // TODO chrome.exe --user-data-dir="C:/Chrome dev session" --disable-web-security
+// TODO would prefer using cards or something else instead of Table, want info not to display as list
+// TODO need to figure out how to import data into card
 // TODO finish formatting table.
-//  TODO no spaces between columns. date should be different format. author's name isn't appearing
+//  TODO no spaces between columns. i added padding which helped
+// TODO title should not be a seperate columns, it should be the first line of the story column
+//  TODO date should be different format.
+//  TODO author's name isn't appearing
 // TODO next step is to fix error with routing of login and register (url). there is an error.
 
 

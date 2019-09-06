@@ -14,19 +14,37 @@ button{
   margin-right: 1rem;
 }
 
-table {
-
-    width: 100%;
-    font-family: "Britannic Bold";
-    text-align: justify;
-
-}
-
-.table {
-  width: 80%;
-  margin: 0 auto;
-}
-
-h3 {
+h1 {
   text-align: center;
 }
+
+/*table {*/
+
+/*    width: 100%;*/
+/*    font-family: "Britannic Bold";*/
+/*    text-align: justify;*/
+
+/*}*/
+
+/*.table {*/
+/*  width: 80%;*/
+/*  margin: 0 auto;*/
+/*}*/
+
+/*h3 {*/
+/*  text-align: center;*/
+/*}*/
+
+/*.mat-column-postBody {*/
+/*  word-wrap: break-word !important;*/
+/*  !*flex: 0 0 85% !important;*!*/
+/*  overflow-wrap: break-word;*/
+/*  padding: 30px;*/
+
+/*}*/
+
+/*.mat-column-postTitle {*/
+/*  word-wrap: break-word !important;*/
+/*  !*flex: 0 0 10% !important;*!*/
+/*  overflow-wrap: break-word;*/
+/*}*/
