@@ -18,6 +18,15 @@ h1 {
   text-align: center;
 }
 
+.mat-card-content {
+  text-align: justify;
+  padding: 15px;
+}
+
+.mat-card-title {
+
+}
+
 /*table {*/
 
 /*    width: 100%;*/

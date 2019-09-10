@@ -13,7 +13,7 @@ import {LoginComponent} from '../login/login.component';
 export class HomepageComponent implements OnInit {
   posts: Post[];
 
-  displayedColumnsPost: string[] = ['postTitle', 'postBody', 'createdOn', 'bloggerName'];
+  displayedColumnsPost: string[] = ['postTitle', 'postBody', 'createdOn', 'bloggerName', 'bloggerId'];
 
 
   constructor(private dialog: MatDialog, private userService: UserService) { }
@@ -62,13 +62,9 @@ export class HomepageComponent implements OnInit {
 // TODO login and register work fine, so does loadPosts.
 // TODO It's all a CORS problem. temporary solution is to run this:
 // TODO chrome.exe --user-data-dir="C:/Chrome dev session" --disable-web-security
-// TODO would prefer using cards or something else instead of Table, want info not to display as list
-// TODO need to figure out how to import data into card
-// TODO finish formatting table.
-//  TODO no spaces between columns. i added padding which helped
-// TODO title should not be a seperate columns, it should be the first line of the story column
-//  TODO date should be different format.
-//  TODO author's name isn't appearing
+//  TODO date I should put it somewhere on card
+//  TODO author's name isn't appearing, because only id is in backend function (getPosts) need to correct this but FIRST
+// TODO I need to figure out how to link blogger table to post table . there is a problem right now. can't link unique key
 // TODO next step is to fix error with routing of login and register (url). there is an error.
 
 
